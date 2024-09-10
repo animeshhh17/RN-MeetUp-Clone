@@ -8,7 +8,11 @@ export default function Events() {
     <>
       <Stack.Screen options={{ title: 'Events' }} />
 
-      <FlatList data={events} renderItem={({ item }) => <EventListitem event={item} />} />
+      <FlatList
+        className="bg-white"
+        data={events}
+        renderItem={({ item }) => <EventListitem event={item} />}
+      />
 
       {/* <EventListitem event={events[0]} />
       <EventListitem event={events[1]} />
